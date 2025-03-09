@@ -52,6 +52,7 @@ import net.minecraft.util.math.random.Random;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
+import meteordevelopment.meteorclient.systems.modules.misc.ThrowUp;
 
 import java.io.File;
 import java.util.*;
@@ -591,6 +592,7 @@ public class Modules extends System<Modules> {
         add(new SoundBlocker());
         add(new Spam());
         add(new Swarm());
+        add(new ThrowUp());
     }
 
     public static class ModuleRegistry extends SimpleRegistry<Module> {
